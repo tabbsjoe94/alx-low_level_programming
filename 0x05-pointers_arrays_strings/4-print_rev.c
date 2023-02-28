@@ -1,26 +1,15 @@
- sloc)  322 Bytes
 #include "main.h"
 
 /**
- * print_rev - Prints a string in reverse.
- * @s: The string
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
-void print_rev(char *s)
+int main(void)
 {
-	int  rev, len;
+    char *str;
 
-	len = 0;
-
-	while (s[len] != '\0')/*loops thru string len & count except last null char*/
-	{
-		len++;
-	}
-
-	for (rev = len - 1; rev >= 0; rev--)
-	{
-		_putchar(s[rev]);
-	}
-
-	_putchar('\n');
+    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    print_rev(str);
+    return (0);
 }
